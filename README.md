@@ -1,3 +1,5 @@
+## Oysturn Vas Portfolio
+This portfolio website is built using React, Tailwind Css, Framer Motion, Drei, Three.js, R3F, and Next.js
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
