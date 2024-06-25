@@ -70,6 +70,7 @@ export default function Hero({ setChangeSection, ...props }) {
                 <NeuButton
                   icon={<SiLinkedin size={"1.5em"} />}
                   color={"text-black"}
+                  hoverColor={"hover:text-blue-500"}
                 />
               </a>
               <a
@@ -79,6 +80,7 @@ export default function Hero({ setChangeSection, ...props }) {
                 <NeuButton
                   icon={<FaInstagram size={"1.5em"} />}
                   color={"text-black"}
+                  hoverColor={"hover:text-fuchsia-600"}
                 />
               </a>
             </div>
@@ -99,7 +101,7 @@ export default function Hero({ setChangeSection, ...props }) {
               transition={{
                 duration: 0.5
               }}
-              className="mobile-blur w-full md:w-[19rem] rounded-2xl bg-white/55 md:bg-white/0 absolute inset-0 -z-10"
+              className="mobile-blur w-full md:w-[19rem] rounded-2xl bg-white/55 md:bg-white/30 absolute inset-0 -z-10 md:hidden"
             ></motion.span>
           )}
         </AnimatePresence>
