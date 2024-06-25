@@ -25,22 +25,55 @@ export default function ContactSocials() {
         <LinkBox
           Icon={SiLinkedin}
           href="https://www.linkedin.com/in/oysturn-vas"
+          initialColor="text-blue-700"
+          startColor="bg-indigo-600"
+          endColor="text-white"
+        />
+        <LinkBox
+          Icon={SiGithub}
+          href="https://github.com/Oysturn-Vas"
+          initialColor="text-black"
+          startColor="bg-black"
+          endColor="text-white"
+        />
+      </div>
+      <div className="grid grid-cols-3 divide-x divide-neutral-900">
+        <LinkBox
+          Icon={BsTwitterX}
+          href="https://x.com/Oysturn_X_Vas"
+          initialColor="text-black"
+          startColor="bg-black"
+          endColor="text-white"
         />
         <LinkBox
           Icon={SiInstagram}
           href="https://www.instagram.com/build.with.ovs/"
+          initialColor="text-fuchsia-600"
+          startColor="bg-rose-400"
+          endColor="text-white"
+        />
+        <LinkBox
+          Icon={SiYoutube}
+          href="#"
+          initialColor="text-red-600"
+          startColor="bg-red-600"
+          endColor="text-white"
         />
       </div>
-      <div className="grid grid-cols-3 divide-x divide-neutral-900">
-        <LinkBox Icon={SiGithub} href="https://github.com/Oysturn-Vas" />
-        <LinkBox Icon={SiYoutube} href="#" />
-        <LinkBox Icon={SiPinterest} href="https://pin.it/7c0AE02KK" />
-      </div>
       <div className="grid grid-cols-2 divide-x divide-neutral-900">
-        <LinkBox Icon={BsTwitterX} href="https://x.com/Oysturn_X_Vas" />
+        <LinkBox
+          Icon={SiPinterest}
+          href="https://pin.it/7c0AE02KK"
+          initialColor="text-red-600"
+          startColor="bg-red-600"
+          endColor="text-white"
+        />
         <LinkBox
           Icon={SiFacebook}
           href="https://www.facebook.com/oysturnxvas/"
+          initialColor="text-blue-700"
+          startColor="bg-indigo-600"
+          endColor="text-white"
         />
       </div>
     </motion.div>
@@ -67,7 +100,13 @@ const EXIT_KEYFRAMES = {
   right: [NO_CLIP, BOTTOM_LEFT_CLIP]
 };
 
-const LinkBox = ({ Icon, href }) => {
+const LinkBox = ({
+  Icon,
+  href,
+  initialColor = "text-black",
+  startColor = "bg-slate-900",
+  endColor = "text-white"
+}) => {
   const [scope, animate] = useAnimate();
 
   const getNearestSide = (e) => {
@@ -128,14 +167,14 @@ const LinkBox = ({ Icon, href }) => {
       }}
       className="relative grid h-32 w-full place-content-center md:h-28"
     >
-      <Icon className="text-xl sm:text-3xl lg:text-4xl" />
+      <Icon className={`text-xl sm:text-3xl lg:text-4xl ${initialColor}`} />
 
       <div
         ref={scope}
         style={{
           clipPath: BOTTOM_RIGHT_CLIP
         }}
-        className="absolute inset-0 grid place-content-center bg-neutral-900 text-white"
+        className={`absolute inset-0 grid place-content-center ${startColor} ${endColor}`}
       >
         <Icon className="text-xl sm:text-3xl md:text-4xl" />
       </div>
