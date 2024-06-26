@@ -13,7 +13,11 @@ export const BouncyCardsFeatures = () => {
           Coded with
           <span className="text-royalBlue"> Love. </span>
         </h2>
-        <Link href="https://github.com/Oysturn-Vas">
+        <Link
+          href="https://github.com/Oysturn-Vas"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

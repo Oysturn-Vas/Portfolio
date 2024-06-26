@@ -24,30 +24,26 @@ export const MAIN_PROJECTS = [
     id: 1,
     title: "Goancart - your own local marketplace",
     description: "A fullstack web app built using PHP, CodeIgniter, and AWS",
-    image: "Goancart.jpg",
-    href: "projects"
+    image: "Goancart.jpg"
   },
 
   {
     id: 2,
     title: "Dishes for All - A community to share your favorite recipes",
     description: "A fullstack web app built React and Next.Js",
-    image: "DishesForAll.jpg",
-    href: "projects"
+    image: "DishesForAll.jpg"
   },
   {
     id: 3,
     title: "Vacation Tracker - Track all the places you want to visit",
     description: "A web app built using React and Express.Js",
-    image: "Places.jpg",
-    href: "projects"
+    image: "Places.jpg"
   },
   {
     id: 4,
     title: "Challenges - Set up challenges and supercharge your day",
     description: "Simple web app built using React and Framer Motion",
-    image: "Challenges.jpg",
-    href: "projects"
+    image: "Challenges.jpg"
   }
 ];
 
@@ -57,7 +53,7 @@ export const ALL_PROJECTS = [
     title: "Goancart",
     description: "Your own goan hyperlocal marketplace",
     image: "Goancart.jpg",
-    href: "projects",
+    href: "https://www.goancart.com/",
     stack: [
       "HTML",
       "CSS",
@@ -75,7 +71,7 @@ export const ALL_PROJECTS = [
     title: "Vacation Picker",
     description: "Keep track of all the destinations in your bucket list.",
     image: "Places.jpg",
-    href: "projects",
+    href: "/projects",
     stack: ["HTML", "CSS", "Javascript", "React", "Express.js"]
   },
   {
@@ -83,7 +79,7 @@ export const ALL_PROJECTS = [
     title: "Challenges",
     description: "Challenge yourself with tasks and supercharge your day.",
     image: "Challenges.jpg",
-    href: "projects",
+    href: "/projects",
     stack: ["HTML", "CSS", "Javascript", "React", "Framer Motion"]
   },
   {
@@ -91,7 +87,7 @@ export const ALL_PROJECTS = [
     title: "Dishes for All",
     description: "Community for sharing your favorite recipes.",
     image: "DishesForAll.jpg",
-    href: "projects",
+    href: "/projects",
     stack: ["HTML", "CSS", "Javascript", "React", "Next.js"]
   },
   {
@@ -99,7 +95,7 @@ export const ALL_PROJECTS = [
     title: "Budget Tracker",
     description: "Track your monthly expenses",
     image: "BudgetTracker.jpg",
-    href: "projects",
+    href: "/projects",
     stack: ["HTML", "CSS", "Javascript", "React"]
   },
   {
@@ -107,7 +103,7 @@ export const ALL_PROJECTS = [
     title: "Investment Calculator",
     description: "Simple calculator to see how rich you will be in the future.",
     image: "InvestmentCalculator.jpg",
-    href: "projects",
+    href: "/projects",
     stack: ["HTML", "CSS", "Javascript", "React"]
   },
   {
@@ -115,7 +111,7 @@ export const ALL_PROJECTS = [
     title: "Project Manager",
     description: "Keep track of different bugs and issue on your projects",
     image: "ProjectManager.jpg",
-    href: "projects",
+    href: "/projects",
     stack: ["HTML", "CSS", "Javascript", "React"]
   },
   {
@@ -123,7 +119,7 @@ export const ALL_PROJECTS = [
     title: "QuizTime",
     description: "Quiz yourself on interesting topics.",
     image: "QuizTime.jpg",
-    href: "projects",
+    href: "/projects",
     stack: ["HTML", "CSS", "Javascript", "React"]
   },
   {
@@ -131,7 +127,7 @@ export const ALL_PROJECTS = [
     title: "EventRadar",
     description: "Find out amazing events around you.",
     image: "EventRadar.jpg",
-    href: "projects",
+    href: "/projects",
     stack: ["HTML", "CSS", "Javascript", "React", "Express.js"]
   }
 ];
