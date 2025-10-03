@@ -5,15 +5,15 @@ import { Tooltip } from "react-tooltip";
 export default function About() {
   const aboutVarients = {
     hidden: {
-      opacity: 0
+      opacity: 0,
     },
     visible: {
       opacity: 1,
       transition: {
         duration: 1.5,
-        delay: 0.5
-      }
-    }
+        delay: 0.5,
+      },
+    },
   };
   return (
     <div className="w-full h-full flex flex-col items-end justify-end pb-4 md:justify-center">
@@ -28,7 +28,7 @@ export default function About() {
             <h1 className="text-2xl md:text-3xl text-royalBlue-200 font-bold italic text-center md:text-left">
               Software Engineer by <span className="text-yellow-400">day,</span>
               <br />
-              3D web wizard by{" "}
+              3D Web and AI Enthusiast by{" "}
               <span className="text-richBlack-400">night.</span>
             </h1>
           </div>
@@ -70,7 +70,7 @@ export default function About() {
           </Tooltip>
           <Tooltip id="formula-one" place="bottom">
             <p className="italic font-medium">
-              RedBull Racing <br /> 11 Sergio Perez
+              Mclaren Racing <br /> 81 Oscar Piastri
             </p>
           </Tooltip>
           <div className="flex flex-row items-center justify-center w-full mt-2">
@@ -80,7 +80,7 @@ export default function About() {
               className="p-2 rounded-lg text-sm font-medium bg-outerSpace text-white hover:bg-seashell-500 hover:text-royalBlue-500 hover:border-outerSpace hover:border-2 flex flex-row items-center justify-center"
               onClick={() => {
                 const link = document.createElement("a");
-                link.download = "OYSTURN_VAS_CV.pdf";
+                link.download = "OYSTURN_VAS_Resume.pdf";
                 link.href = "/Documents/OYSTURN_VAS_CV.pdf";
                 link.click();
               }}
@@ -99,7 +99,7 @@ export default function About() {
                   d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
                 />
               </svg>
-              Curriculum Vitae
+              My Resume
             </motion.button>
           </div>
         </motion.span>
